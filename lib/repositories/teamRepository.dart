@@ -14,10 +14,9 @@ class TeamRepository implements ITeamRepository {
 
   @override
   Future<List<TeamModel>> getTeams() async {
-    // Adicione parâmetros obrigatórios, como league e season
     final queryParameters = {
-      'league': '39', // ID da liga (exemplo: Premier League)
-      'season': '2024', // Temporada (exemplo: 2021)
+      'league': '39', 
+      'season': '2024', 
     };
 
     final uri = Uri.https(
